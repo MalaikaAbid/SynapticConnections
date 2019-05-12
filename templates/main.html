@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" media="screen" href="static/css/bootstrap.css">
+
+    <link rel="stylesheet" href="static/css/main.css">
+
+    <title>Synaptic Connections</title>
+
+  </head>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+
+    <img id="logo" src="static/Synapticlogo.png">
+
+    </div>
+
+  <div class="row d-flex justify-content-center">
+
+    <h3>
+      <small class="text-muted">Welcome to</small>
+      Synaptic Connections
+    </h3>
+
+  </div>
+<div class="row d-flex justify-content-center">
+  <div class="col-auto">
+  <input type="button" value="Log In" class="btn btn-light" onclick="window.location.href='{{ url_for('login') }}'"></input>
+  </div>
+  <div class="col-auto">
+  <input type="button" value="Sign Up" class="btn btn-dark" onclick="window.location.href='{{ url_for('register') }}'"></input>
+  </div>
+</div>
+
+
+
+
+
+</html>

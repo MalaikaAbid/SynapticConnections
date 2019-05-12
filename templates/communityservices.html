@@ -17,7 +17,7 @@
     <div class="container">
 
         <div class="navbar navbar-light">
-          <a class="navbar-brand" href="http://www.localhost:5000/">
+          <a class="navbar-brand" href="{{ url_for('index') }}">
             <img src="/static/Synapticlogo.png" width="50" height="50" class="d-inline-block align-top" alt="">
             Synaptic Connections
           </a>
@@ -32,16 +32,16 @@
 
         <div class="row d-flex justify-content-center">
 
-          <input type="button" value="Wheelchair Vendors" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='http://www.localhost:5000/WheelchairVendors'" />
+          <input type="button" value="Wheelchair Vendors" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('wheelchair') }}'" />
           <!--  <button type="button" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href = http://www.localhost:5000/communityservices"> Community Services </button> -->
 
         </div>
 
        <div class="row d-flex justify-content-center">
 
-        <input type="button" value="Medical Vendors" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='http://www.localhost:5000/MedicalVendors'" />
+        <input type="button" value="Medical Vendors" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('medical') }}'" />
 
-        <input type="button" value="Home Care Services" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='http://www.localhost:5000/HomeCareServices'" />
+        <input type="button" value="Home Care Services" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('homeservices') }}'" />
 
       </div>
 

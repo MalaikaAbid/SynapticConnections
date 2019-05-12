@@ -1,0 +1,15 @@
+#logo {
+
+width: 25%;
+height: 25%;
+
+margin-bottom: 25px;
+
+}
+
+input.btn.btn-dark {
+
+  background-color: rgb(73, 0, 128);
+  color: white;
+
+}

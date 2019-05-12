@@ -14,11 +14,15 @@ app.config['SECRET_KEY']= '50eb51cfa4098f26588f83086fa28229'
 
 
 @app.route('/')
+def main():
+    return render_template('main.html')
+
+@app.route('/Home')
 def index():
     return render_template('index.html')
 
 @app.route('/CommunityServices')
-def nearby():
+def community():
     return render_template('communityservices.html')
 
 @app.route('/WheelchairVendors')
