@@ -33,13 +33,13 @@
 
         map = new google.maps.Map(document.getElementById('map'), {
          center: calgary,
-         zoom: 10
+         zoom: 8
        });
 
      var request = {
        location: calgary,
        radius: '500',
-       query: 'Home Care Services'
+       query: 'Medical Supply Vendors'
      };
      infowindow = new google.maps.InfoWindow();
      service = new google.maps.places.PlacesService(map);
@@ -62,11 +62,10 @@
         });
 
         google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent(place.name);
+          infowindow.setContent('<div><strong>' + place.name + '</strong><br>'+ '<br>' + place.formatted_address +'</div>' );
           infowindow.open(map, this);
         });
       }
-
       google.maps.addDomListener(window, 'load', initialize);
 
     </script>

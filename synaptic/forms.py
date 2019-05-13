@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, IntegerField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, IntegerField, DateField
 from wtforms.validators import DataRequired, Length, Email, EqualTo
-from wtforms.fields.html5 import DateField
+#from wtforms.fields.html5 import DateField
 
 
 class RegistrationForm(FlaskForm):
@@ -10,11 +10,10 @@ class RegistrationForm(FlaskForm):
     age = IntegerField('Age',
                            validators=[DataRequired()])
     diagnosis = StringField('What is your diagnosis (i.e stroke etc.)?',
-                         validators=[DataRequired(), Length(min=2, max=20)])
+                         validators=[DataRequired(), Length(min=2, max=30)])
     dateofdiagnosis = DateField('What was the date of your diagnosis?' ,
-                         validators=[DataRequired()], format='%d/%m/%y')
-    username = StringField('Username',
-                           validators=[DataRequired(), Length(min=2, max=20)])
+                         validators=[DataRequired()], format='%Y/%m/%d')
+
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
