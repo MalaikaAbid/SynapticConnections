@@ -16,9 +16,9 @@
     margin: 25px 25px 25px 25px;
     font-size: 24px;
     line-height: 1.33;
-    background-color: rgb(73, 0, 128);
+    background-color: rgb(255, 255, 255);
     border: 2px solid rgb(73, 0, 128);
-    color: white;
+    color: rgb(73, 0, 128);
     white-space: normal;
 }
 
@@ -36,4 +36,8 @@
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+}
+
+h4 {
+  color: rgb(73, 0, 128);
 }

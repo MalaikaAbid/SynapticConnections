@@ -47,6 +47,14 @@ def homeservices():
 def research():
     return render_template('research.html')
 
+@app.route('/MedicalTerminology')
+def medterms():
+    return render_template('medicalterms.html')
+
+@app.route('/Stroke')
+def stroke():
+    return render_template('stroke.html')
+
 
 
 @app.route("/register", methods=['GET', 'POST'])

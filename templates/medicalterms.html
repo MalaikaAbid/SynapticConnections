@@ -17,35 +17,32 @@
     <div class="container">
 
         <div class="navbar navbar-light">
-
           <a class="navbar-brand" href="{{ url_for('index') }}">
             <img src="/static/Synapticlogo.png" width="50" height="50" class="d-inline-block align-top" alt="">
             Synaptic Connections
           </a>
 
           <!-- Navbar Right Side -->
-          <div class="row">
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
             <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
           </div>
         </div>
-      </div>
 
 
         <div class="row d-flex justify-content-center">
-          <input type="button" value="Community Services" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('community') }}'" />
-          <input type="button" value="Events" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('community') }}'" />
-            <input type="button" value="Medical Terminology" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('medterms') }}'" />
+
+          <input type="button" value="Stroke" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('stroke') }}'" />
+          <!--  <button type="button" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href = http://www.localhost:5000/communityservices"> Community Services </button> -->
 
         </div>
 
        <div class="row d-flex justify-content-center">
 
-         <input type="button" value="Research" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('research') }}'" />
+        <input type="button" value="Parkinson's" class="btn btn-secondary btn-circle btn-xl"/> <!-- onclick="window.location.href='{{ url_for('medical') }}'" /> -->
 
-         <input type="button" value="Funding" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href='{{ url_for('community') }}'" />
-         <!--  <button type="button" class="btn btn-secondary btn-circle btn-xl" onclick="window.location.href = http://www.localhost:5000/communityservices"> Community Services </button> -->
+        <input type="button" value="Multiple Sclerosis" class="btn btn-secondary btn-circle btn-xl"/> <!-- onclick="window.location.href='{{ url_for('homeservices') }}'" /> -->
+
       </div>
 
 

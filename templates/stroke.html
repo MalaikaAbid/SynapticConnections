@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" media="screen" href="static/css/bootstrap.css">
+
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <title>Synaptic Connections</title>
+
+  </head>
+
+  <body>
+    <div class="container">
+
+        <div class="navbar navbar-light">
+          <a class="navbar-brand" href="{{ url_for('index') }}">
+            <img src="/static/Synapticlogo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            Synaptic Connections
+          </a>
+
+          <!-- Navbar Right Side -->
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+            <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <h2 style="color:rgb(73, 0, 128)"> What is Stroke? </h2>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <p class="text-left">For our brain cells to function properly, they require a constant supply of oxygen and nutrients that are
+delivered to the brain through our blood. When blood flow to the brain becomes compromised by a blockage in
+a blood vessel that supplies the brain (ischemic) or by the bursting of a blood vessel in the brain (hemorrhagic),
+brain cells that do not receive enough nutrients begin to die, resulting in a stroke. In most cases, the stroke will
+only affect a portion of the brain, which is why symptoms tend to differ from patient to patient. Because of the
+way the brain is wired, strokes that occur in the right side of the brain commonly affect function of the left side
+of the body, and vice versa.</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+         <h3 style="color:rgb(73, 0, 128)">Post-Stroke Support and Rehabilitation</h3>
+
+        </div>
+
+        <div class="row">
+          <div class="col-8">
+         <p class="text-left"> While the symptoms of a stroke can be severe, many of them
+are common and improve over time and with rehabilitation.
+Your recovery team may consist of a variety of doctors,
+nurses, therapists and dieticians. </p>
+        <ul class="list-unstyled">
+
+          <li><h4 style="color:rgb(73,0,128)">Communication:</h4>
+            <p>Common therapy techniques involve
+matching words to pictures, naming objects
+in pictures, practicing reading
+comprehension and exercises to
+strengthen the muscles needed to speak.</p>
+        </li>
+        <li><h4>Use of Arms and Legs:</h4>
+          <p>Rehabilitation may work on strengthening your muscles, refining
+movements and the proper positioning of joints, through the use of
+splints or orthotics, physiotherapy, exercise, and/or Botox® injections.</p>
+        </li>
+        <li><h4>Bowel and Bladder:</h4>
+          <p>Depending on the cause of your symptoms, physiotherapy, dietary changes and/or lifestyle
+changes may be recommended.<p>
+        </li>
+        <li><h4>Swallowing:</h4>
+          <p>A team of speech pathologists, dieticians, and occupational therapists may provide
+exercises and tips for safe eating.</p>
+        </li>
+        </ul>
+        </div>
+          <div class="col-3">
+              <img src="static/strokeimg.png"></img>
+          </div>
+        </div>
+        <div class="row">
+          <small class="text-muted"> Information adapted from The Heart and Stroke Foundation of Canada: https://www.heartandstroke.ca/</small>
+        </div>
+
+    </div>
+
+  </body>
+</html>
